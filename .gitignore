@@ -1,0 +1,6 @@
+
+.idea/*
+**/tmp/
+target/breakbio-openvax
+target/breakbio-openvax.exe
+target/breakbio-openvax_darwin
