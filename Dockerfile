@@ -1,4 +1,5 @@
 FROM openvax/neoantigen-vaccine-pipeline
-COPY target/breakbio-openvax /opt/breakbio-openvax
-RUN chmod +x /opt/breakbio-openvax
-CMD ["/opt/breakbio-openvax", "serve"]
+USER user
+COPY target/breakbio-openvax /home/user/breakbio-openvax
+RUN sudo chmod +x /home/user/breakbio-openvax
+CMD ["/home/user/breakbio-openvax", "serve"]
